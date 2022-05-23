@@ -1,6 +1,9 @@
 #!/bin/bash
 
-#4. Install zsh
+#1. Install curl
+sudo apt install curl
+
+#2. Install zsh
 echo "Installing zsh"
 sudo apt install zsh
 echo "Installing ohmyzsh"
