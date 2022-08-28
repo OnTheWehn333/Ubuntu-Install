@@ -1,10 +1,16 @@
 #!/bin/zsh
 set -e
-source ~/.zshrc
 
 #1. update apt
 echo updating apt
 sudo apt update
+
+#Need keychain to source my .zshrc
+sudo apt install keychain
+
+echo "sourcing .zshrc"
+source ~/.zshrc
+
 
 wslQuestion() {
 while true; do
